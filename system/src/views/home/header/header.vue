@@ -23,7 +23,7 @@ export default {
   width: 80px;
 }
 .header h2{
-    color: skyblue;
+    color: rgb(102,177,255);
     margin-top:10px; 
 }
 </style>

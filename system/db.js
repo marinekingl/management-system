@@ -1,28 +1,43 @@
 let user = [
     {
         id: 1,
-        username: 'helloworld',
+        date:'2013/07/07',
+        username: 'marineking',
         password: 'hellovue',
+        phone: '13787193277',
+        address:'上海市徐汇区2002号'      
     },
     {
         id:0,
-        username:'marinekingl',
-        password:'joanna72',
+        date: '2013/07/07',
+        username:'kobe',
+        password:'1',
+        phone: '15104508887',
+        address:'上海市徐汇区2002号'      
     },
     {
         id:2,
-        username: '333',
+        date: '2013/07/07',
+        username: 'joey',
         password: '222',
+        phone: '18681309834',
+        address:'上海市徐汇区2002号'      
     },
     {
         id:3,
-        username: '444',
+        date: '2013/07/07',
+        username: 'ross',
         password: '444',
+        phone: '15049511314',
+        address:'北京市海淀区2002号'      
     },
     {
         id:4,
-        username: '111',
+        date: '2013/07/07',
+        username: 'james',
         password: '111',
+        phone: '13961385100',
+        address:'上海市徐汇区2002号'      
     },
 ]
 

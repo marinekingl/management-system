@@ -1,5 +1,7 @@
+
+import db from '../../db'
 const state = {
-    flag: true
+   data:db     
 }
 const getters = {
 
@@ -10,11 +12,7 @@ const actions = {
 }
 
 const mutations = {
-    change(state) {
-        if (state) {
-
-        }
-    }
+        
 }
 
 export default {

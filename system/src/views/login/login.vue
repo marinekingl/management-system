@@ -5,7 +5,7 @@
       <div>
         <el-input v-model="loginForm.user" placeholder="用户名" class="user"></el-input>
       </div>
-      <el-input v-model="loginForm.pwd" placeholder="密码" class="pwd"></el-input>
+      <el-input v-model="loginForm.pwd" placeholder="密码" class="pwd" type="password"></el-input>
       <el-row>
         <el-button type="primary" class="loginbtn" @click.native.prevent="login">登录</el-button>
       </el-row>
@@ -48,10 +48,11 @@ export default {
   position: absolute;
   top: 30%;
   left: 50%;
-  border: 1px solid skyblue;
   text-align: center;
   color: rgb(102, 177, 255);
-  border-radius: 5%;
+  border-radius: 3%;
+  box-shadow: 10px 10px 10px 10px rgba(236, 236, 236, 0.5);
+  background-color: rgb(255, 255, 255);
 }
 .loginform {
   text-align: center;
