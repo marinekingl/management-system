@@ -1,7 +1,12 @@
-
 import db from '../../db'
+
 const state = {
-   data:db     
+    user: db,
+    Form: {
+        userS: "",
+        pwdS: ""
+    },
+    flag:false
 }
 const getters = {
 
@@ -12,11 +17,23 @@ const actions = {
 }
 
 const mutations = {
-        
+    login(state,all) {
+        state.Form = all
+        for (let i = 0; i < state.user.length; i++) {
+            if (
+                state.Form.userS == state.user[i].username &&
+                state.Form.pwdS == state.user[i].password
+            ) {
+                 state.flag = true 
+            }
+        }
+      return state.flag 
+    },
+    
 }
 
+
 export default {
-    namespaced: true,
     state,
     getters,
     actions,

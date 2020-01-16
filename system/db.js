@@ -1,6 +1,6 @@
 let user = [
     {
-        id: 1,
+        id: 0,
         date:'2013/07/07',
         username: 'marineking',
         password: 'hellovue',
@@ -8,7 +8,7 @@ let user = [
         address:'上海市徐汇区2002号'      
     },
     {
-        id:0,
+        id:1,
         date: '2013/07/07',
         username:'kobe',
         password:'1',
@@ -31,14 +31,7 @@ let user = [
         phone: '15049511314',
         address:'北京市海淀区2002号'      
     },
-    {
-        id:4,
-        date: '2013/07/07',
-        username: 'james',
-        password: '111',
-        phone: '13961385100',
-        address:'上海市徐汇区2002号'      
-    },
+    
 ]
 
 export default user

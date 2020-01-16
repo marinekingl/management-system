@@ -5,7 +5,7 @@ import vuex from 'vuex'
 const login = () => import('@/views/login/login.vue')
 const home = () => import('@/views/home/home.vue')
 const user = () => import('@/views/home/sidebaritem/user.vue')
-const purview = () => import('@/views/home/sidebaritem/purview.vue')
+const editor = () => import('@/views/home/sidebaritem/editor/editor.vue')
 const Order = () => import('@/views/home/sidebaritem/Order.vue')
 const goods = () => import('@/views/home/sidebaritem/goods.vue')
 
@@ -19,7 +19,7 @@ VueRouter.prototype.push = function push(location) {
 
 const routes = [{
     path: '/',
-    redirect: 'login'
+    redirect: 'home'
   },
   {
     path: '/login',
@@ -29,21 +29,21 @@ const routes = [{
     path: '/home',
     component: home,
     children: [{
-        path: '/home/user',
-        component: user
+        path: 'user',
+        component: user,
       },
       {
-        path: '/home/purview',
-        component: purview
+        path: 'Order',
+        component: Order
       },
       {
-        path:'/home/Order',
-        component:Order
+        path: 'goods',
+        component: goods
       },
-      {
-        path:'goods',
-        component:goods
-      }
+       {
+         path: 'editor',
+         component: editor
+       }
     ]
   }
 ]

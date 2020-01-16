@@ -36,7 +36,7 @@ export default {
   computed:{
       boxshadow(){
           return 'box-shadow: 0 2px 4px rgba(73,137,244, .12), 0 0 6px rgba(73,137,244, .04)'
-      }
+      },
   }
 };
 </script>

@@ -14,8 +14,8 @@ export default {
   name: "sidebar",
   data() {
     return {
-      side: ["用户管理", "权限管理", "商品管理", "订单管理"],
-      sidepath:['/user','/purview','/goods','/Order']
+      side: ["用户管理", "商品管理", "订单管理"],
+      sidepath:['/user','/goods','/Order']
     };
   },
   component: {
